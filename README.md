@@ -2,17 +2,17 @@
 ### Apartments listing &amp; details application
 
 ### Four main components
-- Database
-- API
-- Web app
-- Mobile app
+- Database : MySQL
+- API : Python, Django
+- Web app : JavaScript, React, JSX
+- Mobile app : JavaScript, React-Native, TypeScript
 
 ### For each
 - infra/build.sh: builds image from Dockerfile
 - infra/run.sh: runs container from an already built image
 
 ### system build and run steps (implemented and tested on Ubuntu Jammy)
-1.  cd /apartments
+1.  cd ./apartments-listing
 2.  sh ./db/infra/run.sh      # wait for 1 min for db to start
 3.  sh ./api/infra/build.sh
 4.  sh ./api/infra/run.sh
@@ -47,7 +47,7 @@ curl --request POST --url http://127.0.0.1:8000/app/apartments/1
 - This will allow it to connect to the React app hosted on the machine
 
 #### Steps to run on device
-1. cd apartments/
+1. cd apartments-listing
 2. Run sh ./mobile/infra/build.sh
 3. Run sh ./mobile/infra/run.sh          #you'll be directed to a shell session within the container
 4. Connect your device via USB
