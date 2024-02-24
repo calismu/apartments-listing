@@ -11,7 +11,7 @@
 - infra/build.sh: builds image from Dockerfile
 - infra/run.sh: runs container from an already built image
 
-### build and run steps (implemented and tested on Ubuntu Jammy)
+### system build and run steps (implemented and tested on Ubuntu Jammy)
 1.  cd /apartments
 2.  sh ./db/infra/run.sh      # wait for 1 min for db to start
 3.  sh ./api/infra/build.sh
@@ -39,7 +39,7 @@ curl --request POST --url http://127.0.0.1:8000/app/apartments/1
 
 ---
 
-#### Mobile App
+#### Mobile App - trying react-native/TS for the first time :)
 - The app uses a WebView component \(react-native-webview\) to implement the interface
 - All code is within App.tsx
 - This strategy was followed to take advantage from the React web app already implemented
