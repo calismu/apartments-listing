@@ -1,4 +1,4 @@
-## apartments-listing
+## apartments-listing (All in 1 repo)
 ### Apartments listing &amp; details application
 
 ### Four main components
